@@ -48,3 +48,66 @@
   margin-bottom: 2rem;
   text-align: center;
 }
+
+.card__icon {
+  width: 200px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  margin-bottom: .4rem;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  transition: background .3s ease-in-out, color .3s ease-in-out;
+  cursor: pointer;
+}
+
+.card__icon-box {
+  width: 25x;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__icon-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card__icon--fb {
+  color: #2c5eff;
+  border: 1px solid #2c5eff;
+  transition: background .3s ease-in-out;
+}
+
+.card__icon--fb:hover {
+  background: #2c5eff;
+  color: white;
+}
+
+.card__icon--ig {
+  color: #773fe7;
+  border: 1px solid #773fe7;
+  transition: background .3s ease-in-out;
+}
+
+.card__icon--ig:hover {
+  background: #773fe7;
+  color: white;
+}
+
+.card__icon--db {
+  color: #f962b1;
+  border: 1px solid #f962b1;
+  transition: background .3s ease-in-out;
+}
+
+.card__icon--db:hover {
+  background: #f962b1;
+  color: white;
+}
+
