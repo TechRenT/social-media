@@ -56,7 +56,7 @@ let cssStyles = `
   }
 
   .card__wrapper {
-    height: 400px;
+    height: 470px;
     padding: 20px;
     max-width: 300px;
     width: 100%;
@@ -176,7 +176,8 @@ background-position: center;
 style.innerHTML = cssStyles;
 card.innerHTML  = html;
 
-let cardSocials = card.getElementsByClassName('card-socials')[0];
+
+let cardSocials = card.getElementsByClassName('card__socials')[0];
 let temp = `
   <div class="card__icon card__icon--fb">
     <span class="card__icon-box">
@@ -187,5 +188,14 @@ let temp = `
 `;
 
 data.socials.forEach((item) => {
+  let itemHtml = `
+  <div class="card__icon card__icon--${item.id}">
+    <span class="card__icon-box">
+      <i class="${item.icon}"></i>
+    </span>
+    <span class="card__icon-title">${item.service}</span>
+  </div>
+  `;
 
+  cardSocials.insertAdjacentHTML('beforeend', itemHtml);
 });
